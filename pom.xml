@@ -20,10 +20,15 @@
     </dependencies>
 
     <properties>
+        <sonar.java.binaries>target/classes</sonar.java.binaries>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
+        <sonar.host.url>http://84.237.50.237:9000</sonar.host.url>
+        <sonar.login>d63bf6bda88efe05678e8a577c0630ad985f140c</sonar.login>
     </properties>
+
+
 
     <build>
         <plugins>
@@ -31,6 +36,17 @@
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.7.0.1746</version>
+                <executions>
+                    <execution>
+
+                        <phase>test</phase>
+                        <goals>
+                            <goal>
+                                sonar
+                            </goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
 
@@ -61,5 +77,7 @@
 
         </plugins>
     </build>
+
+
 
 </project>
