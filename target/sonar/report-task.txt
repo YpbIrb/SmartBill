@@ -1,0 +1,6 @@
+projectKey=net.nsu.smak.maven:SmartBill
+serverUrl=http://84.237.50.237:9000
+serverVersion=7.7.0.23042
+dashboardUrl=http://84.237.50.237:9000/dashboard?id=net.nsu.smak.maven%3ASmartBill
+ceTaskId=AXJWpp3xm_g9Jg0xTpaf
+ceTaskUrl=http://84.237.50.237:9000/api/ce/task?id=AXJWpp3xm_g9Jg0xTpaf
